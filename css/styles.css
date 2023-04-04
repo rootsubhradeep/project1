@@ -1,0 +1,346 @@
+/*Google Fonts*/
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif, Brush Script MT, Brush Script Std, cursive;
+    background-color: #f9e6e6;
+}
+
+   
+
+/* Parallax effect styles */
+.parallax {
+    background-image: url(photo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    background-attachment: scroll;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-30%, 20%);
+}
+
+.parallax-content h1 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(255, 225, 0);
+}
+
+.parallax-content p {
+    font-family:  Brush Script MT, Brush Script Std, cursive;
+    font-size: 23px;
+    margin-top: 22px;
+    color: #10d2dd;
+}
+
+
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root {
+    --navbar-heght: 10vh;
+}
+
+
+
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+
+}
+/*logo and img*/
+#logo {
+    margin: 10px 30px;
+    height: 1.5cm;
+    width: 2cm;
+}
+
+#logo img {
+    height: 2cm;
+    width: 2.5cm;
+    margin: -10px 0px;
+}
+
+/*Navigation bar*/
+#navbar {
+    position: relative;
+    overflow: hidden;
+    background-color: #dacb03;
+}
+
+#navbar ul {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a:active {
+    background-color: #aa9104;
+    color: rgb(255, 255, 255);
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: rgb(57, 7, 7);
+    float: left;
+    transition:0.3s ease;
+}
+
+#navbar ul li a:hover {
+    display: block;
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: rgb(54, 43, 110);
+    background-color:#ffffff;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#search-form {
+    margin-right: 15px;
+}
+
+#search-input {
+    width: 300px;
+}
+
+
+#Featured{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#Featured .fe-box{
+    padding: 10px 8px 0px 15px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03 );
+    border: 1px solid #9af6a8;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+#Featured .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(52, 45, 185, 0.1);
+}
+#Featured .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#Featured .fe-box h6{
+    display: inline-block;
+    padding:9px 8px 6px 8px;
+    line-height: 1; 
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#Featured .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+#Featured .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+#Featured .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+#Featured .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+#Featured .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 18%;
+    min-width: 215px;
+    padding: 10px 12px;
+    border: 1px solid #99e4a4;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 40px 30px 30px rgba(0, 0, 0, 0.1);
+}
+#product1 .pro img {
+    width:100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;  
+}
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 13px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25)
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+
+
+
+/* FOOTER */
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: #007b5e !important;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
